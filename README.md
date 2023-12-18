@@ -5,6 +5,13 @@
 
 This documentation provides an overview and detailed information about the feature-rich calculator project. The task was to create a basic calculator using HTML, CSS, and vanilla JavaScript, with additional features for enhanced functionality and user experience.
 
+## Video Demonstration
+
+
+https://github.com/Borngod/Alx-Portfolio-Project/assets/117746948/87a69349-f221-41ba-96e2-04751230a7de
+
+
+
 ## Features
 
 ### 1. Basic Calculator Functionality
