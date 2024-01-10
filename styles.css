@@ -1,0 +1,451 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    
+    height: 100vh;
+    background: linear-gradient(45deg, #0a0a0a,#3a4452);
+    
+
+  
+    
+     
+}
+.background{
+    z-index: -1;
+}
+main{
+    display: flex;
+    z-index: 100;
+}
+div.main-calcus{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    height: 100vh;
+    position: fixed;
+}
+
+div.calc-ui{
+    border: 1px solid rgb(113, 115, 119);
+    padding: 15px;
+    border-radius: 16px;
+    background: transparent;
+    box-shadow: rgba(113, 115, 119, 0.5) 0px 3px 15px;
+    width: 380px;
+
+}
+
+#inp-1,#out-1{
+    width: 100%;
+    padding:24px;
+    background: transparent;
+    /* box-shadow: 0px 3px 15px rgbs(84,84,84,0.1); */
+    font-size: 1.1rem;
+    text-align: right;
+    cursor: pointer;
+    border: none transparent;
+    outline: none;
+    color: white;
+    padding-bottom: 0.4em;
+    letter-spacing: 2px;
+
+}
+#out-1{
+    font-size: 1.5rem;
+    font-weight: 560;
+    overflow: hidden;
+    padding-right: 1.1em;
+    margin-bottom: 0.5em;
+    text-overflow: ellipsis;
+    padding: 0px 1.2em 0px 0px;
+}   
+
+#inp-1{
+    font-weight: 550;
+    padding-top: 0.4em;
+    overflow: hidden;
+    height: 65px;
+    padding: 0.4em 1.4em 0px 0px;
+    font-size: 1.3rem;
+    /* padding-bottom: 1em; */
+    margin-bottom: 0.1em;
+    
+    
+}
+
+div.history{
+    width: 30%;
+    position: relative;
+    /* text-align: right; */
+    /* align-content: flex-end; */
+    left: 65%;
+}
+
+div.history h2{
+    text-align: left;
+    margin-top: 1em;
+    color: white;
+}
+
+input::placeholder{
+    color: white;
+}
+
+button{
+    border: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 0.8em;
+    color: rgb(255, 255, 255);
+    background: linear-gradient(45deg, rgb(10, 10, 10), rgb(58, 68, 82));
+    box-shadow: rgba(255, 255, 255, 0.1) -8px -8px 15px;
+    cursor: pointer;
+    font-weight: 550;
+    font-size: 1.2rem;
+    
+}
+
+
+
+.equalBtn{
+    background-color: #fb7c14;
+
+}
+
+.operator{
+    color:#6dee0a;
+
+}
+
+.operator1{
+    color: #eb6666;
+}
+
+.operator2{
+    color:  #26fed7
+}
+
+/* animation from internet */
+@keyframes move {
+    100% {
+        transform: translate3d(0, 0, 1px) rotate(360deg);
+    }
+}
+
+.background {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background: #110425;
+    overflow: hidden;
+}
+
+.background span {
+    width: 12vmin;
+    height: 12vmin;
+    border-radius: 12vmin;
+    backface-visibility: hidden;
+    position: absolute;
+    animation: move;
+    animation-duration: 45;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+
+.background span:nth-child(0) {
+    color: #E45A84;
+    top: 74%;
+    left: 60%;
+    animation-duration: 20s;
+    animation-delay: -20s;
+    transform-origin: 20vw 10vh;
+    box-shadow: 24vmin 0 3.7620955192281937vmin currentColor;
+}
+.background span:nth-child(1) {
+    color: #FFACAC;
+    top: 49%;
+    left: 10%;
+    animation-duration: 13s;
+    animation-delay: -40s;
+    transform-origin: 4vw -8vh;
+    box-shadow: -24vmin 0 3.5135557957667vmin currentColor;
+}
+.background span:nth-child(2) {
+    color: #FFACAC;
+    top: 52%;
+    left: 51%;
+    animation-duration: 48s;
+    animation-delay: -45s;
+    transform-origin: 19vw 16vh;
+    box-shadow: 24vmin 0 3.43788819176289vmin currentColor;
+}
+.background span:nth-child(3) {
+    color: #E45A84;
+    top: 46%;
+    left: 62%;
+    animation-duration: 43s;
+    animation-delay: -15s;
+    transform-origin: -22vw 6vh;
+    box-shadow: 24vmin 0 3.239366492613342vmin currentColor;
+}
+.background span:nth-child(4) {
+    color: #E45A84;
+    top: 78%;
+    left: 21%;
+    animation-duration: 43s;
+    animation-delay: -8s;
+    transform-origin: 17vw 16vh;
+    box-shadow: -24vmin 0 3.686860169321501vmin currentColor;
+}
+.background span:nth-child(5) {
+    color: #E45A84;
+    top: 95%;
+    left: 98%;
+    animation-duration: 27s;
+    animation-delay: -29s;
+    transform-origin: -12vw 14vh;
+    box-shadow: 24vmin 0 3.6828272542378295vmin currentColor;
+}
+.background span:nth-child(6) {
+    color: #FFACAC;
+    top: 88%;
+    left: 32%;
+    animation-duration: 43s;
+    animation-delay: -13s;
+    transform-origin: -14vw -23vh;
+    box-shadow: -24vmin 0 3.2327398101566307vmin currentColor;
+}
+.background span:nth-child(7) {
+    color: #583C87;
+    top: 55%;
+    left: 82%;
+    animation-duration: 40s;
+    animation-delay: -43s;
+    transform-origin: 17vw 14vh;
+    box-shadow: 24vmin 0 3.9306294914193356vmin currentColor;
+}
+.background span:nth-child(8) {
+    color: #E45A84;
+    top: 36%;
+    left: 19%;
+    animation-duration: 23s;
+    animation-delay: -45s;
+    transform-origin: 5vw -3vh;
+    box-shadow: -24vmin 0 3.2820119497737634vmin currentColor;
+}
+.background span:nth-child(9) {
+    color: #E45A84;
+    top: 65%;
+    left: 42%;
+    animation-duration: 32s;
+    animation-delay: -36s;
+    transform-origin: -3vw 17vh;
+    box-shadow: -24vmin 0 3.3287310511400765vmin currentColor;
+}
+.background span:nth-child(10) {
+    color: #583C87;
+    top: 49%;
+    left: 62%;
+    animation-duration: 35s;
+    animation-delay: -30s;
+    transform-origin: 9vw 12vh;
+    box-shadow: 24vmin 0 3.288525742586608vmin currentColor;
+}
+.background span:nth-child(11) {
+    color: #E45A84;
+    top: 98%;
+    left: 56%;
+    animation-duration: 10s;
+    animation-delay: -3s;
+    transform-origin: -1vw 5vh;
+    box-shadow: 24vmin 0 3.965202582922184vmin currentColor;
+}
+.background span:nth-child(12) {
+    color: #583C87;
+    top: 55%;
+    left: 31%;
+    animation-duration: 39s;
+    animation-delay: -42s;
+    transform-origin: -1vw 7vh;
+    box-shadow: 24vmin 0 3.839192874027365vmin currentColor;
+}
+.background span:nth-child(13) {
+    color: #FFACAC;
+    top: 71%;
+    left: 11%;
+    animation-duration: 44s;
+    animation-delay: -42s;
+    transform-origin: -3vw -22vh;
+    box-shadow: -24vmin 0 3.302491445324927vmin currentColor;
+}
+.background span:nth-child(14) {
+    color: #FFACAC;
+    top: 34%;
+    left: 54%;
+    animation-duration: 25s;
+    animation-delay: -36s;
+    transform-origin: 25vw -11vh;
+    box-shadow: 24vmin 0 3.312270277394187vmin currentColor;
+}
+
+ul#history-list{
+    color: white;
+    list-style: num;
+    
+    font-weight: 500;
+    font-size: 1.4rem;
+    overflow: auto;
+    padding: 0.34em;
+    width: 390px;
+}
+
+ul#history-list li{
+    margin: 1em;
+    cursor: pointer;
+}
+
+ul#history-list li:hover,
+ul#history-list li:focus{
+    color: #FFACAC;
+    font-weight: 600;
+
+}
+div.history-lead{
+    display: flex;
+    gap: 40px;
+    align-items: center;
+   
+    
+    
+}
+img#bin{
+    width: 6%;
+    object-fit: contain;
+    padding-top: 1.2em;
+    cursor: pointer;
+    
+
+   
+}
+
+img#bin:hover,
+img#bin:focus{
+    transform:scale(1.2)
+}
+
+img#bin1{
+    display: none;
+    
+
+   
+}
+
+
+
+
+/* working on mobile display */
+
+@media (max-width:400px){
+    button {
+        width: 35px;
+        height: 35px;
+        font-weight: 500;
+        font-size: 1rem;
+        margin: 0.6em;
+    }
+
+    div.history{
+        display: none;
+    }
+}
+
+@media (max-width:412px){
+    button {
+        width: 35px;
+        height: 35px;
+        font-weight: 500;
+        font-size: 1rem;
+        
+    }
+
+    div.history{
+        display: none;
+    }
+}
+
+@media (max-width:400px){
+    button {
+        width: 35px;
+        height: 35px;
+        font-weight: 500;
+        font-size: 1rem;
+        margin: 0.6em;
+    }
+
+    div.history{
+        display: none;
+    }
+}
+
+@media (max-width:855px){
+
+    div.history {
+    /* max-height: 400vh; */
+    position: relative;
+    top: 400px;
+    right: 92%;
+    left: -0.2%;
+    /* height: 54vh; */
+    width: 550px;
+    border-radius: 20px;
+    background: linear-gradient(45deg, rgb(10, 10, 10), rgb(58, 68, 82));
+}
+
+
+    
+
+    button{
+        width: 35px;
+        height: 35px;
+        font-weight: 500;
+        font-size: 1rem;
+    }
+
+    div.calc-ui {
+        position: relative;
+        left: 20%;
+        width: 300px;
+
+    }
+
+    img#bin1 {
+        width: 6%;
+        object-fit: contain;
+        padding-top: 1.2em;
+        cursor: pointer;
+        position: fixed;
+        left: 90%;
+        top: 220px;
+        display: unset;
+    }
+
+    img#bin{
+        width: 8%;
+    }
+
+    div.history h2{
+        margin-left: 1em;
+    }
+
+    div.history.isOn{
+        display: unset;
+    }
+}
